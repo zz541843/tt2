@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "./dist",
+//        "composite": true,
+        "baseUrl": "./",
+        "rootDir": "./src",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            ".pnpm/@vue+shared@3.2.37/node_modules/@vue/shared": [
+                "node_modules/.pnpm/@vue+shared@3.2.37/node_modules/@vue/shared/*"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*.vue",
+        "./src/**/*.ts",
+        "auto-imports.d.ts"
+    ]
+}
